@@ -1,0 +1,62 @@
+aside {
+  display: flex;
+  flex-direction: column;
+
+  height: 50vh;
+
+  margin-top: 10vh;
+
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1rem;
+    color: #08fdd8;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .alternativeContact {
+    display: flex;
+    width: 35vw;
+
+    justify-content: space-between;
+
+    .alternativeContactInfo {
+      width: 80%;
+      color: #fd2155;
+      border-bottom: 1px solid #08fdd8;
+      padding-bottom: 2vh;
+
+      text-align: center;
+    }
+
+    .buttonIcon {
+      cursor: pointer;
+    }
+  }
+
+  .socialsIcons {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+
+    a svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  aside {
+    margin-top: 5vh;
+    align-items: center;
+
+    .alternativeContact {
+      width: 80vmin;
+    }
+
+    .socialsIcons {
+      width: 80vmin;
+    }
+  }
+}

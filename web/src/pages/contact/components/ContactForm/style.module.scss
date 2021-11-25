@@ -1,0 +1,117 @@
+form {
+  width: 45vmax;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 10vh;
+
+  justify-content: space-between;
+  gap: 5vh;
+
+  .fild {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    justify-content: space-between;
+    gap: 2vh;
+
+    color: #fd2155;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    textarea,
+    input {
+      width: 100%;
+      height: 5vh;
+
+      font-size: 0.8rem;
+
+      color: #fefefe;
+      background: transparent;
+
+      border: 1px solid #08fdd8;
+      border-radius: 20px;
+      resize: none;
+
+      padding: 0.2vh 1vw 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &:nth-last-child(2) {
+      width: 45vw;
+
+      textarea {
+        height: 14vh;
+        padding: 1vh 1vw 0;
+      }
+    }
+  }
+
+  input.sendInput {
+    min-width: 25vh;
+    height: 7vh;
+
+    font-weight: bold;
+
+    background: #fd2155;
+    border: none;
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: #08fdd8;
+      color: #fd2155;
+      transition: 0.7s;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  form {
+    width: 90vw;
+
+    .fild {
+      &:nth-last-child(2) {
+        width: 90vw;
+
+        textarea {
+          height: 15vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  form {
+    flex-direction: column;
+
+    .fild {
+      width: 90vw;
+
+      &:nth-last-child(2) textarea {
+        height: 20vh;
+      }
+    }
+
+    input.sendInput {
+      width: 35vw;
+    }
+  }
+}

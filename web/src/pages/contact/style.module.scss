@@ -1,0 +1,37 @@
+.contactMain {
+  width: 100vw;
+  min-height: 86vh;
+
+  padding: 4vh 2vw;
+
+  background-color: #292c2e;
+
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.5rem;
+    color: #08fdd8;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .contactContent {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .contactMain {
+
+    align-items: center;
+
+
+    .contactContent {
+      align-items: center;
+      flex-direction: column;
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Clients {
+  id             String   @id @default(uuid())
+  clientName     String
+  clientEmail    String
+  clientPhone    String
+  text           String
+  whisedDeadline DateTime
+  createdAt      DateTime @default(now())
+
+  @@map("clients")
+}
+
+model Works {
+  id          String   @id @default(uuid())
+  workName    String   @unique
+  subText     String
+  text        String   @db.LongText
+  imgLink     String
+  itsOpenCode Boolean
+  githubLink  String?
+  itsOnline   Boolean
+  workLink    String?
+  itsFavorite Boolean  @default(false)
+  lastChange  DateTime @default(now())
+
+  @@map("works")
+}

@@ -1,0 +1,190 @@
+.indexFirstPart {
+  padding: 3vh 1vw;
+
+  .group1 {
+    display: flex;
+    justify-content: space-between;
+    height: 42vh;
+
+    .principalText {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.25rem;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        color: #808080;
+      }
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      a svg:hover {
+        fill: #08fdd8;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .group2 {
+    height: 42vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .secundaryText {
+      color: #08fdd8;
+
+      strong {
+        font-size: 2rem;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      p {
+        margin-top: 10vh;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+        span a {
+          color: #fd2155;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .contactButton {
+      background: transparent;
+      border: #08fdd8 solid 1px;
+      padding: 1vh 2.5vw;
+
+      a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-family: "Roboto", sans-serif;
+        color: #08fdd8;
+      }
+
+      &:hover {
+        background: #08fdd8;
+        color: #fd2155;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .indexFirstPart {
+    padding: 3vh 1vw;
+
+    .group1 {
+      display: flex;
+      justify-content: space-between;
+      height: 42vh;
+
+      .principalText {
+        width: 80vw;
+
+        h2 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1rem;
+        }
+
+        h1 {
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.75rem;
+          font-weight: 700;
+        }
+
+        p {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1rem;
+          color: #808080;
+        }
+      }
+
+      .socials {
+        a svg {
+          width: 4vmax;
+          height: 4vmax;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .indexFirstPart {
+    gap: 5vh;
+
+    .group1 {
+      height: auto;
+
+      .principalText {
+        gap: 5vh;
+
+        h1 {
+          font-size: 3vmax;
+        }
+
+        p {
+          font-size: 2.5vmax;
+        }
+      }
+
+      .socials {
+        height: 40vh;
+      }
+    }
+
+    .group2 {
+      height: auto;
+
+      margin-top: 5vh;
+
+      flex-direction: column;
+      align-items: center;
+
+      .secundaryText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        strong {
+          font-size: 3vmax;
+        }
+
+        p {
+          font-size: 2.5vmax;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .contactButton {
+        align-self: flex-end;
+        margin: 5vh 3vw 0;
+      }
+    }
+  }
+}

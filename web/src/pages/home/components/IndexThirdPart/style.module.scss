@@ -1,0 +1,147 @@
+.IndexThirdPart {
+  width: 100%;
+
+  background: linear-gradient(
+    rgb(41, 44, 46) 14%,
+    rgb(255, 255, 255) 1%,
+    rgb(255, 255, 255) 90%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 10vh;
+
+  .skillsBlock {
+    width: 80vw;
+    padding: 2vh 0;
+
+    min-height: fit-content;
+
+    background: #fff;
+    border: #808080 1px solid;
+    border-radius: 50px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 5vh;
+
+    strong {
+      color: #08fdd8;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .skillsList {
+      display: flex;
+      justify-content: space-around;
+
+      .skill {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+
+        gap: 5vh;
+
+        &:nth-child(2) {
+          border-left: 1px solid #808080;
+          border-right: 1px solid #808080;
+          width: 35%;
+          padding: 0 3vw;
+        }
+
+        p,
+        h3 {
+          font-size: 1rem;
+          font-family: "Open Sans", sans-serif;
+        }
+
+        li {
+          font-size: 1rem;
+          font-family: "Open Sans", sans-serif;
+          margin-bottom: 3vh;
+          text-align: left;
+        }
+      }
+    }
+
+    a {
+      align-self: flex-end;
+      margin-right: 8vw;
+
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      color: #fd2155;
+      text-decoration: none;
+      background: transparent;
+      border: #fd2155 solid 1px;
+      padding: 1vh 2vw;
+
+      &:hover {
+        color: #08fdd8;
+        border: #08fdd8 solid 1px;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .IndexThirdPart {
+    .skillsBlock {
+      .skillsList {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5vh;
+
+        .skill {
+          width: 100%;
+
+          &:nth-child(2) {
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+            padding: 10vh 0;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .IndexThirdPart {
+    .skillsBlock {
+      strong {
+        font-size: 4vmin;
+      }
+
+      .skillsList {
+        .skill {
+          li {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    button {
+      font-size: 2vmin;
+      padding: 0.75vh 1.5vw;
+    }
+  }
+}

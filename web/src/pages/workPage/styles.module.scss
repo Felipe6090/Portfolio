@@ -1,0 +1,65 @@
+.workPageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 5vh;
+
+  background: #292c2e;
+  color: #e1e1e6;
+
+  img {
+    height: 80vh;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+
+    color: #08fdd8;
+  }
+
+  h2,
+  p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 0 2vw;
+
+    gap: 2vh;
+
+    margin-bottom: 7vh;
+
+    h1 {
+      align-self: center;
+    }
+
+    a {
+        color: #fd2155 ;
+        text-decoration: none;
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .workPageMain {
+
+    img {
+      height: 60vh;
+    }
+  }
+}

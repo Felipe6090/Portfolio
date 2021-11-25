@@ -1,0 +1,93 @@
+.indexSecondPart {
+  height: 65vh;
+
+  padding: 0 1vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  strong {
+    font-size: 3vmax;
+    font-family: "Open Sans", sans-serif;
+    color: #fd2155;
+    margin-bottom: 10vh;
+  }
+
+  .favoriteCasesList {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+
+    .workDiv {
+      width: 30%;
+      height: 25vh;
+
+      padding: 2vh 1vw;
+
+      display: flex;
+
+      align-items: flex-end;
+      justify-content: flex-end;
+      text-align: end;
+
+      text-decoration: none;
+      background: transparent;
+      background-size: cover;
+      color: #08fdd8;
+      border-radius: 4px;
+
+      h2 {
+        font-size: 3vmin;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+
+  .seeAllButton {
+    align-self: flex-end;
+    margin: 10vh 0;
+
+    .componentButton {
+      font-size: 1.25rem;
+      font-family: "Roboto", sans-serif;
+      color: #08fdd8;
+      background: #fd2155;
+      text-decoration: none;
+      border: none;
+      padding: 1vh 2.5vw;
+      margin-right: 3vw;
+
+      border-radius: 25px;
+
+      &:hover {
+        transition: 0.7s;
+        color: #fd2155;
+        background: #08fdd8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .indexSecondPart {
+    height: auto;
+
+    .favoriteCasesList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+
+      .workDiv {
+        width: 90%;
+        height: 30vh;
+
+        h2 {
+          font-size: 3vmax;
+        }
+      }
+    }
+  }
+}

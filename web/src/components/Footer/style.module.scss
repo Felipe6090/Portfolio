@@ -1,0 +1,50 @@
+.footer {
+  background: #111517;
+  padding: 1vh 2vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 7vh;
+
+  .indentifier {
+    color: #808080;
+    font-size: 0.7rem;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 2vw;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .socials {
+    width: 15vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a svg {
+      height: 22px;
+      width: 22px;
+
+      &:hover {
+        transition: 0.7s;
+        fill: #08fdd8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .socials {
+      width: 22vmax;
+    }
+  }
+}

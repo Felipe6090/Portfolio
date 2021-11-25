@@ -1,0 +1,120 @@
+.skillsMain {
+  background: #292c2e;
+  color: #e1e1e6;
+
+  height: 86vh;
+  padding: 5vh 1vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+
+  h1 {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+
+    color: #08fdd8;
+  }
+
+  .contentSection {
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    .mainTextSection {
+      width: 45%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      p {
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+
+        a {
+          text-decoration: none;
+          color: #fd2155;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .skillsSection {
+      width: 45%;
+      height: 50vh;
+
+      display: flex;
+      flex-direction: column;
+      gap: 8vh;
+
+      .skillBar {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        .skillLine {
+          height: 2px;
+
+          &.backEnd {
+            width: 60%;
+            background: #00de5c;
+          }
+
+          &.firebase {
+            width: 60%;
+            background: #08fdd8;
+          }
+
+          &.sql {
+            width: 70%;
+            background: #ffd564;
+          }
+
+          &.reactJS {
+            width: 80%;
+            background: #6028ff;
+          }
+
+          &.typescript {
+            width: 70%;
+            background: #fd2155;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .skillsMain {
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+
+    .contentSection {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 7vh;
+      
+      .mainTextSection {
+        width: 90%;
+      }
+      .skillsSection {
+        width: 90%;
+        height: auto;
+      }
+    }
+  }
+}

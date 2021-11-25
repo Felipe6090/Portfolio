@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2rem; /* width of the entire scrollbar */
+  background-color: transparent;
+  position: relative;
+  z-index: +2;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #292c2e;
+  position: relative;
+  z-index: +2;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  position: relative;
+  background-color: #08fdd8; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  z-index: +2;
+}

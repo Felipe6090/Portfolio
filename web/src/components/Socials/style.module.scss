@@ -1,0 +1,28 @@
+.socials {
+  width: 15vmax;
+  display: flex;
+  justify-content: space-between;
+
+  a svg {
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      fill: #08fdd8;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    width: 22vmax;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+  .socials {
+    width: 80vw;
+  }
+
+}
